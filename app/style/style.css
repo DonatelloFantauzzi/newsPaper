@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Julius+Sans+One&display=swap");
 :root {
   --xsmall: 0.5rem;
   --small: 0.7rem;
@@ -8,6 +9,7 @@
   --xl: 3rem;
   --serif: Georgia;
   --sans: Arial;
+  --bebas: Bebas Neue;
   --blue: 0, 0, 255;
   --purple: 128, 0, 128 ;
   --white: white;
@@ -64,7 +66,8 @@ body[data-theme=purple] {
   font-family: "Arial";
 }
 .header__title {
-  font-size: var(--large);
+  font-size: var(--xl);
+  font-family: "Bebas Neue";
 }
 .header__nav {
   display: none;
