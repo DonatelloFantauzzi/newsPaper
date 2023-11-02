@@ -105,7 +105,7 @@ body {
 
 .header {
   text-align: center;
-  padding: map-get($measure, base);
+  padding: map-get($measure, large);
   background-color: var(--color-primary);
   color: var(--white);
   font-family: map-get($fontStyle, sans);

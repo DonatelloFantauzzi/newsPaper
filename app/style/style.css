@@ -58,7 +58,7 @@ body[data-theme=purple] {
 
 .header {
   text-align: center;
-  padding: 1rem;
+  padding: 2rem;
   background-color: var(--color-primary);
   color: var(--white);
   font-family: "Arial";
