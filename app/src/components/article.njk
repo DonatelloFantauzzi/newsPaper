@@ -1,0 +1,50 @@
+
+
+{% for section in sections %}
+
+  <section class="section">
+    <div class=" max-width-900 margin-auto">
+      <h2 class="section__title"> {{section.sectionTitle}} </h2>
+        <div class="section__articles-layout">
+
+          {% if section.articles.length > 0  %}
+
+            {% for article in section.articles %}
+        
+              <article class="article">
+                <div class="article__img">
+                  <picture>
+                    <source
+                      
+                      srcset="{{article.srcset}}"
+                      
+                      srcset="https://unsplash.it/600/338?random"
+                      media="(min-width:768px)"
+                    />
+                    <img
+                      class="img"
+                      
+                      src="{{ article.img }}"
+                      
+                      src="https://unsplash.it/450/600?random"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </picture>
+                </div>
+                <div class="article__content">
+                  <h1 class="article__title">{{ article.articleTitle }}</h1>
+                  <p class="article__para">{{ article.content }}</p>
+                </div>
+              </article>
+
+            {% endfor %}
+
+          {% endif %}
+
+        </div>
+    </div>
+  </section>
+
+{% endfor %}
+

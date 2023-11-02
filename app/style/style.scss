@@ -1,0 +1,264 @@
+// Maps in SCSS
+$measure: (
+  "xsmall": 0.5rem,
+  "small": 0.7rem,
+  "base": 1rem,
+  "base-l": 1.2rem,
+  "medium": 1.8rem,
+  "large": 2rem,
+  "xl": 3rem,
+);
+
+// Breakpoints map
+$breakpoints: (
+  "sm": 768px,
+  "md": 1200px,
+  "lg": 1600px,
+);
+
+// FontStyle map
+$fontStyle: (
+  "serif": "Georgia",
+  "sans": "Arial",
+);
+
+// Color map
+$colors: (
+  "blue": "0, 0, 255",
+  "purple": "128, 0, 128 ",
+  "white": white,
+);
+
+@mixin breakpoints($name) {
+  @if not map-has-key($breakpoints, $name) {
+    @warn "Invalid breakpoint `#{$name}`.";
+  } @else {
+    @media screen and (min-width: map-get($breakpoints,$name)) {
+      @content;
+    }
+  }
+}
+
+:root {
+  // Facciamo un ciclo each così da creare variabile CSS da poter usare anche
+  // durante il codice in SCSS var(--nomeVariabile)
+
+  // Margin / Padding / Font-Size
+  @each $name, $value in $measure {
+    --#{$name}: #{$value};
+  }
+
+  // FontStyle
+  @each $name, $value in $fontStyle {
+    --#{$name}: #{$value};
+  }
+
+  // Colors
+  @each $name, $value in $colors {
+    --#{$name}: #{$value};
+  }
+}
+
+html *,
+body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--serif);
+  &[data-theme="blue"] {
+    --color-primary: rgb(var(--blue));
+    --color-light: rgba(var(--blue), 0.15);
+  }
+  &[data-theme="purple"] {
+    --color-primary: rgb(var(--purple));
+    --color-light: rgba(var(--purple), 0.15);
+  }
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 4s linear;
+  &:hover {
+    transform: scale(1.5);
+  }
+  // @media screen and (min-width: 768px) {
+  //   border-radius: map-get($measure, small);
+  // }
+
+  @include breakpoints("sm") {
+    border-radius: var(--small);
+  }
+}
+
+.max-width-900 {
+  max-width: 900px;
+}
+
+.margin-auto {
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  padding: map-get($measure, base);
+  background-color: var(--color-primary);
+  color: var(--white);
+  font-family: map-get($fontStyle, sans);
+
+  &__title {
+    font-size: var(--large);
+  }
+
+  &__nav {
+    display: none;
+  }
+}
+
+.footer {
+  background-color: var(--color-primary);
+  color: var(--white);
+  text-align: center;
+  font-size: map-get($measure, base);
+  font-style: italic;
+  padding: var(--large);
+}
+
+.section {
+  background-color: var(--color-light);
+  padding-top: map-get($measure, large);
+  :nth-child(even of &) {
+    background-color: var(--white);
+  }
+}
+
+.section__articles-layout {
+  // padding: var(--base);
+
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: map-get($measure, large);
+    grid-template-areas:
+      "a a"
+      "b c"
+      "d e";
+  }
+}
+
+.section__title {
+  color: var(--color-primary);
+  padding-bottom: map-get($measure, xsmall);
+  font-family: map-get($fontStyle, sans);
+  position: relative;
+  border-bottom: 3px solid var(--color-primary);
+  line-height: map-get($measure, small);
+
+  &::first-letter {
+    font-size: map-get($measure, large);
+  }
+}
+
+.article {
+  padding: map-get($measure, large) 0;
+  position: relative;
+
+  &:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 80%;
+    background-color: var(--color-primary);
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    @media screen and (min-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: unset;
+    :nth-child(1 of &) {
+      display: grid;
+      padding-top: 2rem;
+
+      grid-template-columns: repeat(2, 1fr);
+      grid-area: a;
+    }
+
+    :nth-child(2 of &)::after {
+      right: 0;
+      width: 2px;
+      height: 100%;
+      left: calc(100% + 1rem);
+    }
+
+    &:not(:first-child) {
+      padding-bottom: unset;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: map-get($measure, base);
+    }
+  }
+
+  &__img {
+    overflow: hidden;
+    @media screen and (min-width: 768px) {
+      border-radius: map-get($measure, small);
+    }
+    .section:nth-child(odd) & {
+      order: 1;
+    }
+  }
+
+  &__content {
+    padding: map-get($measure, base) map-get($measure, base) 0;
+    @media screen and (min-width: 768px) {
+      padding: unset;
+      .article:not(:first-child) & {
+        padding-top: 1rem;
+      }
+
+      .article:first-child & {
+        padding-left: 1rem;
+      }
+
+      .section:nth-child(odd) & {
+        padding-left: unset;
+        padding-right: 1rem;
+      }
+    }
+  }
+
+  &__title {
+    font-size: var(--large);
+    color: var(--color-primary);
+    padding-bottom: var(--base);
+    @media screen and (min-width: 768px) {
+      .article:not(:first-child) & {
+        font-size: map-get($measure, base-l);
+      }
+    }
+  }
+  &__para {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    font-weight: 500;
+    line-height: 1.5;
+    font-family: map-get($fontStyle, sans);
+    font-size: var(--base);
+    @media screen and (min-width: 768px) {
+      .article:not(:first-child) & {
+        display: none;
+      }
+    }
+  }
+}
