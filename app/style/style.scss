@@ -6,6 +6,7 @@ $measure: (
   "small": 0.7rem,
   "base": 1rem,
   "base-l": 1.2rem,
+  "medium-b": 1.5rem,
   "medium": 1.8rem,
   "large": 2rem,
   "xl": 3rem,
@@ -94,10 +95,6 @@ body {
   // @media screen and (min-width: 768px) {
   //   border-radius: map-get($measure, small);
   // }
-
-  @include breakpoints("sm") {
-    border-radius: var(--small);
-  }
 }
 
 .max-width-900 {
@@ -110,6 +107,14 @@ body {
 
 .accent {
   color: var(--accent);
+}
+
+.span {
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  padding-bottom: var(--xsmall);
+  display: inline-block;
 }
 
 .header {
@@ -188,7 +193,7 @@ body {
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @include breakpoints("sm") {
     padding-top: unset;
     :nth-child(1 of &) {
       display: grid;
@@ -208,7 +213,7 @@ body {
     &:not(:first-child) {
       padding-bottom: unset;
       display: flex;
-      align-items: center;
+      align-items: start;
       justify-content: center;
       gap: map-get($measure, base);
     }
@@ -217,7 +222,9 @@ body {
   &__img {
     overflow: hidden;
     @media screen and (min-width: 768px) {
-      border-radius: map-get($measure, small);
+      .article:not(:first-child) & {
+        width: 300%;
+      }
     }
     .section:nth-child(odd) & {
       order: 1;
@@ -228,9 +235,9 @@ body {
     padding: map-get($measure, base) map-get($measure, base) 0;
     @media screen and (min-width: 768px) {
       padding: unset;
-      .article:not(:first-child) & {
-        padding-top: 1rem;
-      }
+      // .article:not(:first-child) & {
+      //   padding-top: 1rem;
+      // }
 
       .article:first-child & {
         padding-left: 1rem;
@@ -248,7 +255,7 @@ body {
     padding-bottom: var(--base);
     @media screen and (min-width: 768px) {
       .article:not(:first-child) & {
-        font-size: map-get($measure, base-l);
+        font-size: var(--medium-b);
       }
     }
   }

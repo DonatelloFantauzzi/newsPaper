@@ -7,19 +7,22 @@
           "articleTitle": "Roma, maltempo:tre ore di pioggia, caos in città",
           "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat porttitor urna a iaculis. Cras.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat porttitor urna a iaculis. Cras.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat porttitor urna a iaculis. Cras.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat porttitor urna a iaculis. Cras",
           "srcset": "https://unsplash.it/600/338?random",
-          "img": "https://unsplash.it/450/600?random"
+          "img": "https://unsplash.it/450/600?random",
+          "badge": "News"
         },
         {
           "articleTitle": "Il palazzo occupato dove disabili e bambini vivono senza riscaldamento né ascensore",
           "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat porttitor urna a iaculis. Cras.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat porttitor urna a iaculis. Cras.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat porttitor urna a iaculis. Cras.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat porttitor urna a iaculis. Cras",
           "srcset": "https://unsplash.it/600/338?random",
-          "img": "https://unsplash.it/450/600?random"
+          "img": "https://unsplash.it/450/600?random",
+          "badge": "Oggi"
         },
         {
           "articleTitle": "Io, truffata per 1200 euro da falso militare della marina e da falso ortopedico",
           "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat porttitor urna a iaculis. Cras.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat porttitor urna a iaculis. Cras.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat porttitor urna a iaculis. Cras.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat porttitor urna a iaculis. Cras",
           "srcset": "https://unsplash.it/600/338?random",
-          "img": "https://unsplash.it/450/600?random"
+          "img": "https://unsplash.it/450/600?random",
+          "badge": "Attualità"
         }
       ]
     },
@@ -30,19 +33,22 @@
           "articleTitle": "Emergenza cinghiali, a nord di Roma cresce la preoccupazione: firmata una nuova ordinanza",
           "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat porttitor urna a iaculis. Cras.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat porttitor urna a iaculis. Cras.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat porttitor urna a iaculis. Cras.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat porttitor urna a iaculis. Cras",
           "srcset": "https://unsplash.it/600/338?random",
-          "img": "https://unsplash.it/450/600?random"
+          "img": "https://unsplash.it/450/600?random",
+          "badge": "Governo"
         },
         {
           "articleTitle": "Largo Regeni a Roma non s’ha da fare. L’atto del 2021 viene “ignorato” dagli uffici ",
           "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat porttitor urna a iaculis. Cras.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat porttitor urna a iaculis. Cras.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat porttitor urna a iaculis. Cras.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat porttitor urna a iaculis. Cras",
           "srcset": "https://unsplash.it/600/338?random",
-          "img": "https://unsplash.it/450/600?random"
+          "img": "https://unsplash.it/450/600?random",
+          "badge": "Destra"
         },
         {
           "articleTitle": "Caos traffico a piazza Venezia, modificata di nuovo la viabilità e intensificata la presenza di vigili ",
           "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat porttitor urna a iaculis. Cras.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat porttitor urna a iaculis. Cras.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat porttitor urna a iaculis. Cras.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat porttitor urna a iaculis. Cras",
           "srcset": "https://unsplash.it/600/338?random",
-          "img": "https://unsplash.it/450/600?random"
+          "img": "https://unsplash.it/450/600?random",
+          "badge": "Sinistra"
         }
       ]
     },
@@ -53,19 +59,22 @@
           "articleTitle": "Feyenoord-Lazio: Sarri nel mirino dei tifosi olandesi",
           "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat porttitor urna a iaculis. Cras.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat porttitor urna a iaculis. Cras.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat porttitor urna a iaculis. Cras.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat porttitor urna a iaculis. Cras",
           "srcset": "https://unsplash.it/600/338?random",
-          "img": "https://unsplash.it/450/600?random"
+          "img": "https://unsplash.it/450/600?random",
+          "badge": "Calcio"
         },
         {
           "articleTitle": "La settimana del tennis a Roma: Netta sconfitta del TC Parioli, domina l'EUR Sporting Club",
           "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat porttitor urna a iaculis. Cras.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat porttitor urna a iaculis. Cras.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat porttitor urna a iaculis. Cras.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat porttitor urna a iaculis. Cras",
           "srcset": "https://unsplash.it/600/338?random",
-          "img": "https://unsplash.it/450/600?random"
+          "img": "https://unsplash.it/450/600?random",
+          "badge": "Pallavolo"
         },
         {
           "articleTitle": "Pellegrino Albanese della Cynthialbalonga non ha dubbi 'In D temo Cavese e Nocerina'",
           "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat porttitor urna a iaculis. Cras.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat porttitor urna a iaculis. Cras.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat porttitor urna a iaculis. Cras.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat porttitor urna a iaculis. Cras",
           "srcset": "https://unsplash.it/600/338?random",
-          "img": "https://unsplash.it/450/600?random"
+          "img": "https://unsplash.it/450/600?random",
+          "badge": "Mondiali"
         }
       ]
     }
