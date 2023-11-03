@@ -69,5 +69,28 @@
         }
       ]
     }
+  ],
+
+  "nav": [
+    {
+      "title": "Notizie",
+      "items": ["Ultime Notizie", "Cronaca", "Politica", "Attualità", "Sport"]
+    },
+    {
+      "title": "Cosa fare in città",
+      "items": ["Eventi", "Cinema", "Negozi", "Dove Mangiare"]
+    },
+    {
+      "title": "Cibo",
+      "items": ["Mappe", "Storie", "Cibo Today"]
+    },
+    {
+      "title": "Zone",
+      "items": ["Roma", "Esquilino", "Testaccio", "Villaggio Olimpico"]
+    },
+    {
+      "title": "Altre sezioni",
+      "items": ["Foto", "Video", "Segnalazioni", "Opinioni"]
+    }
   ]
 }

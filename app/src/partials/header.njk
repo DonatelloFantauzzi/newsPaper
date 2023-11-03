@@ -1,11 +1,32 @@
 <header class="header">
-  <h1 class="header__title"><span class="accent">City</span> News</h1>
-  <nav class="header__nav">
-    <ul class="header__links-container">
-      <li class="header__link"><a href="#">Home</a></li>
-      <li class="header__link"><a href="#">About</a></li>
-      <li class="header__link"><a href="#">Contact</a></li>
-    </ul>
-  </nav>
+  <div class="max-width-900 margin-auto">
+    <h1 class="header__title"><span class="accent">City</span> News</h1>
+    <nav class="header__nav">
+      <ul class="header__links-container">
+        <li class="header__link"><a href="#modal">Home</a></li>
+        <li class="header__link"><a href="#modal">About</a></li>
+        <li class="header__link"><a href="#modal">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header__modal " id="modal">
+      <div class="header__modal__links max-width-900 margin-auto">
+        {% for item in nav %}
+         <div class="notizie">
+            <span class="notizie__title">
+             {{item.title}}
+            </span>
+           <ul class="notizie__list">
+            {% if item.items is iterable %}
+              {% for list in item.items %}
+                <li class="notizie__item">
+                  {{list}}
+                  </li>
+              {% endfor %}
+            {% endif %}
+            </ul>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
 </header>
-
