@@ -107,7 +107,7 @@ body[data-theme=purple] {
   padding-bottom: 0.5rem;
   font-family: "Arial";
   position: relative;
-  border-bottom: 3px solid var(--color-primary);
+  border-bottom: 3px solid var(--accent);
   line-height: 0.7rem;
 }
 .section__title::first-letter {

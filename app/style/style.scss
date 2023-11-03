@@ -162,7 +162,7 @@ body {
   padding-bottom: map-get($measure, xsmall);
   font-family: map-get($fontStyle, sans);
   position: relative;
-  border-bottom: 3px solid var(--color-primary);
+  border-bottom: 3px solid var(--accent);
   line-height: map-get($measure, small);
 
   &::first-letter {
