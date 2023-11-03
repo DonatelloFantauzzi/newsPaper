@@ -9,6 +9,7 @@ $measure: (
   "medium": 1.8rem,
   "large": 2rem,
   "xl": 3rem,
+  "xxl": 6rem,
 );
 
 // Breakpoints map
@@ -27,9 +28,10 @@ $fontStyle: (
 
 // Color map
 $colors: (
-  "blue": "0, 0, 255",
+  "grey": "243, 243, 243",
   "purple": "128, 0, 128 ",
   "white": white,
+  "accent": "#ffac26",
 );
 
 @mixin breakpoints($name) {
@@ -72,8 +74,8 @@ body * {
 body {
   font-family: var(--serif);
   &[data-theme="blue"] {
-    --color-primary: rgb(var(--blue));
-    --color-light: rgba(var(--blue), 0.15);
+    --color-primary: rgb(var(--grey));
+    --color-light: rgba(var(--grey), 0.15);
   }
   &[data-theme="purple"] {
     --color-primary: rgb(var(--purple));
@@ -106,16 +108,19 @@ body {
   margin: 0 auto;
 }
 
+.accent {
+  color: var(--accent);
+}
+
 .header {
   text-align: center;
   padding: map-get($measure, large);
   background-color: var(--color-primary);
-  color: var(--white);
   font-family: map-get($fontStyle, sans);
 
   &__title {
-    font-size: var(--xl);
-    font-family: map-get($fontStyle, bebas);
+    font-size: var(--xxl);
+    font-family: var(--bebas);
   }
 
   &__nav {
@@ -125,7 +130,6 @@ body {
 
 .footer {
   background-color: var(--color-primary);
-  color: var(--white);
   text-align: center;
   font-size: map-get($measure, base);
   font-style: italic;
@@ -155,7 +159,6 @@ body {
 }
 
 .section__title {
-  color: var(--color-primary);
   padding-bottom: map-get($measure, xsmall);
   font-family: map-get($fontStyle, sans);
   position: relative;
@@ -242,7 +245,6 @@ body {
 
   &__title {
     font-size: var(--large);
-    color: var(--color-primary);
     padding-bottom: var(--base);
     @media screen and (min-width: 768px) {
       .article:not(:first-child) & {
