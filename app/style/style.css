@@ -16,6 +16,7 @@
   --purple: 128, 0, 128 ;
   --white: white;
   --accent: #ffac26;
+  --after: #d9d9d9;
 }
 
 html *,
@@ -95,7 +96,7 @@ body[data-theme=purple] {
   padding-top: 2rem;
 }
 :nth-child(even of .section) {
-  background-color: var(--white);
+  background-color: var(--color-primary);
 }
 
 @media screen and (min-width: 768px) {
@@ -127,7 +128,7 @@ body[data-theme=purple] {
   position: absolute;
   height: 2px;
   width: 80%;
-  background-color: var(--color-primary);
+  background-color: var(--after);
   left: 50%;
   bottom: 0;
   transform: translateX(-50%);
@@ -152,6 +153,7 @@ body[data-theme=purple] {
     width: 2px;
     height: 100%;
     left: calc(100% + 1rem);
+    background-color: var(--after);
   }
   .article:not(:first-child) {
     padding-bottom: unset;

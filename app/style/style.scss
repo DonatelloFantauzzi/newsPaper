@@ -33,6 +33,7 @@ $colors: (
   "purple": "128, 0, 128 ",
   "white": white,
   "accent": "#ffac26",
+  "after": #d9d9d9,
 );
 
 @mixin breakpoints($name) {
@@ -145,7 +146,7 @@ body {
   background-color: var(--color-light);
   padding-top: map-get($measure, large);
   :nth-child(even of &) {
-    background-color: var(--white);
+    background-color: var(--color-primary);
   }
 }
 
@@ -184,7 +185,7 @@ body {
     position: absolute;
     height: 2px;
     width: 80%;
-    background-color: var(--color-primary);
+    background-color: var(--after);
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
@@ -208,6 +209,7 @@ body {
       width: 2px;
       height: 100%;
       left: calc(100% + 1rem);
+      background-color: var(--after);
     }
 
     &:not(:first-child) {
